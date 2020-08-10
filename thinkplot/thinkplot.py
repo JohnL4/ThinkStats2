@@ -56,6 +56,26 @@ class _Brewer(object):
                     [0, 1, 2, 3, 4, 5, 6, 7, 8],
                     ]
 
+    # Override colors with prettier choices for color displays, never mind grayscale (Lusk)
+    # https://colorbrewer2.org/?type=qualitative&scheme=Set1&n=9 but switching red & blue, darkening yellow, reducing
+    # intensity of red.
+    # (Note that the Brewer colors are for cartography (filled regions as opposed to lines?)
+    #
+    colors = ['#377eb8', '#f52d2d','#984ea3','#4daf4a','#ff7f00','#a7a700','#a65628','#f781bf','#999999']
+    
+    # Override color selections (Lusk)
+    which_colors = [[],
+                    [0],
+                    [0, 1],
+                    [0, 1, 2],
+                    [0, 1, 2, 3],
+                    [0, 1, 2, 3, 4],
+                    [0, 1, 2, 3, 4, 5],
+                    [0, 1, 2, 3, 4, 5, 6],
+                    [0, 1, 2, 3, 4, 5, 6, 7],
+                    [0, 1, 2, 3, 4, 5, 6, 7, 8],
+                    ]
+    
     current_figure = None
 
     @classmethod
